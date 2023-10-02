@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="conteiner">
+      <form class="form" id="form" novalidate>
+        <fieldset class="fieldset">
+          <legend>Контактная информация</legend>
+          <label for="first-name">Имя</label>
+          <input
+            class="input"
+            name="name"
+            type="text"
+            placeholder="введите имя"
+            id="first-name"
+            required
+            >
+            <span class="span"></span>
+          <label for="last-name">Фамилия</label>
+          <input
+            class="input"
+            name="last-name"
+            type="text"
+            placeholder="введите фамилию"
+            id="last-name"
+            required>
+            <span class="span"></span>
+          <label for="birth-day">Дата рождения (от 18 лет)</label>
+          <input
+            class="input"
+            name="birth-day"
+            type="date"
+            id="birth-day"
+            required>
+            <span class="span"></span>
+          <label for="email">Email</label>
+          <input
+            class="input"
+            name="email"
+            type="email"
+            placeholder="ivanov@gmai.com"
+            id="email"
+            required>
+            <span class="span"></span>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>Придумайте надежный пароль</legend>
+          <label for="password">Пароль</label>
+          <input
+            class="input"
+            name="password"
+            type="password"
+            placeholder="введите пароль"
+            id="password"
+            required>
+            <span class="span"></span>
+          <label for="password-confirm">Подтверждение пароля</label>
+          <input
+            class="input"
+            name="password-confirm"
+            type="password"
+            placeholder="подтвердите пароль"
+            id="password-confirm"
+            required>
+            <span class="span"></span>
+        </fieldset>
+        <div class="button-conteiner">
+          <button class="button" id="form-button">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
